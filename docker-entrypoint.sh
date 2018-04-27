@@ -1,5 +1,7 @@
 #!/bin/sh
 
+echo "fabric.machinelearning.rserve version 2018.04.27.01"
+
 if [[ -z "${SERVICE_USER:-}" ]]; then
     echo "SERVICE_USER must be specified"
     exit 1
@@ -25,6 +27,6 @@ else
   /usr/lib64/R/bin/Rserve.dbg --RS-enable-remote --no-save
 fi
 
-while true; do
-  sleep 1
-done
+# while true; do
+#   sleep 1
+# done
