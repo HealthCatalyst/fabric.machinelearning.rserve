@@ -1,3 +1,6 @@
+
+# curl -useb https://raw.githubusercontent.com/HealthCatalyst/fabric.machinelearning.rserve/master/run.ps1 | iex;
+
 docker stop fabric.machinelearning.rserve
 docker rm fabric.machinelearning.rserve
 
