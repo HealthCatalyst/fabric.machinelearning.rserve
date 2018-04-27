@@ -5,7 +5,7 @@ LABEL version="1.0"
 ADD install-rserve.R /
 RUN Rscript install-rserve.R
 
-RUN Rscript -e "install.packages(c('RODBC', 'healthcareai'))"
+RUN Rscript -e "install.packages(c('RODBC', 'healthcareai', 'jsonlite'))"
 
 ADD docker-entrypoint.sh ./docker-entrypoint.sh
 
