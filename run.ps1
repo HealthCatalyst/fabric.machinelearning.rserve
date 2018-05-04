@@ -3,6 +3,7 @@
 
 docker stop fabric.machinelearning.rserve
 docker rm fabric.machinelearning.rserve
+docker pull healthcatalyst/fabric.machinelearning.rserve
 
 $USERNAME=$($env:USERNAME)
 $AD_DOMAIN=$env:USERDNSDOMAIN
