@@ -10,7 +10,8 @@ RUN Rscript -e "install.packages(c('RODBC', 'healthcareai', 'jsonlite'))"
 ADD docker-entrypoint.sh ./docker-entrypoint.sh
 
 RUN dos2unix ./docker-entrypoint.sh &>/dev/null \
-	&& chmod a+x ./docker-entrypoint.sh
+	&& chmod a+x ./docker-entrypoint.sh \
+	&& mkdir -p /opt/healthcatalyst/models
 
 EXPOSE 6311
 
