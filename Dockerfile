@@ -2,6 +2,8 @@ FROM healthcatalyst/fabric.machinelearning.r:latest
 LABEL maintainer="Health Catalyst"
 LABEL version="1.0"
 
+RUN yum -y install libcurl libcurl-devel
+
 ADD install-rserve.R /
 RUN Rscript install-rserve.R
 
